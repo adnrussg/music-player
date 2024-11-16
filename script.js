@@ -8,73 +8,83 @@ const shuffleButton = document.getElementById("shuffle");
 const allSongs = [
   {
     id: 0,
-    title: "Scratching The Surface",
-    artist: "Quincy Larson",
-    duration: "4:25",
-    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/scratching-the-surface.mp3",
+    title: "Time in a Tree",
+    artist: "Raleigh Ritchie",
+    duration: "3:45",
+    src: "./Songs/Time in a Tree.mp3",
+    imgsrc: "./SongImages/Time in a Tree.jfif",
   },
   {
     id: 1,
-    title: "Can't Stay Down",
-    artist: "Quincy Larson",
-    duration: "4:15",
-    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/can't-stay-down.mp3",
+    title: "pinKing",
+    artist: "Hoyo-MiX, San-Z",
+    duration: "3:06",
+    src: "./Songs/pinKing.mp3",
+    imgsrc: "./SongImages/pinKing.jfif",
   },
   {
     id: 2,
-    title: "Still Learning",
-    artist: "Quincy Larson",
-    duration: "3:51",
-    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/still-learning.mp3",
+    title: "I've Got You Under My Skin",
+    artist: "Frank Sinatra",
+    duration: "3:42",
+    src: "./Songs/I've Got You Under My Skin.mp3",
+    imgsrc: "./SongImages/I've Got You Under My Skin.jfif",
   },
   {
     id: 3,
-    title: "Cruising for a Musing",
-    artist: "Quincy Larson",
-    duration: "3:34",
-    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/cruising-for-a-musing.mp3",
+    title: "Virgen",
+    artist: "Adolescent's Orquesta",
+    duration: "4:31",
+    src: "./Songs/Virgen.mp3",
+    imgsrc: "./SongImages/Virgen.jfif",
   },
   {
     id: 4,
-    title: "Never Not Favored",
-    artist: "Quincy Larson",
-    duration: "3:35",
-    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/never-not-favored.mp3",
+    title: "Buddy Holly",
+    artist: "Weezer",
+    duration: "2:39",
+    src: "./Songs/Buddy Holly.mp3",
+    imgsrc: "./SongImages/Buddy Holly.jfif",
   },
   {
     id: 5,
-    title: "From the Ground Up",
-    artist: "Quincy Larson",
-    duration: "3:12",
-    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/from-the-ground-up.mp3",
+    title: "Chop Suey!",
+    artist: "System Of A Down",
+    duration: "3:30",
+    src: "./Songs/Chop Suey!.mp3",
+    imgsrc: "./SongImages/Chop Suey!.jfif",
   },
   {
     id: 6,
-    title: "Walking on Air",
-    artist: "Quincy Larson",
-    duration: "3:25",
-    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/walking-on-air.mp3",
+    title: "狼之主",
+    artist: "塞壬唱片-MSR, Adam Gubman, Shawn W. Smith",
+    duration: "3:34",
+    src: "./Songs/狼之主.mp3",
+    imgsrc: "./SongImages/狼之主.jfif",
   },
   {
     id: 7,
-    title: "Can't Stop Me. Can't Even Slow Me Down.",
-    artist: "Quincy Larson",
-    duration: "3:52",
-    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/cant-stop-me-cant-even-slow-me-down.mp3",
+    title: "Lovebug",
+    artist: "Jonas Brothers",
+    duration: "3:40",
+    src: "./Songs/Lovebug.mp3",
+    imgsrc: "./SongImages/Lovebug.jfif",
   },
   {
     id: 8,
-    title: "The Surest Way Out is Through",
-    artist: "Quincy Larson",
-    duration: "3:10",
-    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/the-surest-way-out-is-through.mp3",
+    title: "Afterglow",
+    artist: "Ed Sheeran",
+    duration: "3:05",
+    src: "./Songs/Afterglow.mp3",
+    imgsrc: "./SongImages/Afterglow.jfif",
   },
   {
     id: 9,
-    title: "Chasing That Feeling",
-    artist: "Quincy Larson",
-    duration: "2:43",
-    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/chasing-that-feeling.mp3",
+    title: "Por Que te Vas",
+    artist: "Gaby Moreno",
+    duration: "2:57",
+    src: "./Songs/Por Que te Vas.mp3",
+    imgsrc: "./SongImages/Por Que te Vas.jfif",
   },
   {
     id: 10,
@@ -82,6 +92,7 @@ const allSongs = [
     artist: "Jimmy Eat World",
     duration: "2:45",
     src: "./Songs/The Middle.mp3",
+    imgsrc: "./SongImages/The Middle.jfif",
   },
   {
     id: 11,
@@ -89,6 +100,7 @@ const allSongs = [
     artist: "Hozier",
     duration: "3:42",
     src: "./Songs/Wildflower and Barley.mp3",
+    imgsrc: "./SongImages/Wildflower and Barley.jfif",
   },
   {
     id: 12,
@@ -96,6 +108,31 @@ const allSongs = [
     artist: "Tatsuya Kitani",
     duration: "3:16",
     src: "./Songs/青のすみか.mp3",
+    imgsrc: "./SongImages/青のすみか.jfif",
+  },
+  {
+    id: 13,
+    title: "Dystopia",
+    artist: "ONE OK ROCK",
+    duration: "3:09",
+    src: "./Songs/Dystopia.mp3",
+    imgsrc: "./SongImages/Dystopia.jfif",
+  },
+  {
+    id: 14,
+    title: "Same Blue",
+    artist: "OFFICIAL HIGE DANDISM",
+    duration: "3:57",
+    src: "./Songs/Same Blue.mp3",
+    imgsrc: "./SongImages/Same Blue.jfif",
+  },
+  {
+    id: 15,
+    title: "キタカゼ",
+    artist: "SIX LOUNGE",
+    duration: "3:31",
+    src: "./Songs/キタカゼ.mp3",
+    imgsrc: "./SongImages/キタカゼ.jfif",
   },
 ];
 
@@ -107,9 +144,11 @@ let userData = {
 };
 
 const playSong = (id) => {
+  const songImg = document.getElementById("song-cover");
   const song = userData?.songs.find((song) => song.id === id);
   audio.src = song.src;
   audio.title = song.title;
+  songImg.src = song.imgsrc;
 
   if (userData?.currentSong === null || userData?.currentSong.id !== song.id) {
     audio.currentTime = 0;
@@ -159,7 +198,7 @@ const shuffle = () => {
   userData.songCurrentTime = 0;
 
   renderSongs(userData?.songs);
-  pauseSong();
+  playSong(userData?.songs[0].id);
   setPlayerDisplay();
   setPlayButtonAccessibleText();
 };
